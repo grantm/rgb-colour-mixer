@@ -128,7 +128,7 @@
             });
             var knob_width = this.$knob.outerWidth();
             var knob_height = this.$knob.outerHeight();
-            $el.find('.knob').css('left', center - knob_width / 2);
+            $el.find('.knob').css('left', center - knob_width / 2 - 1);
             this.knob_origin = this.$track.position().top + 256 + tpad - knob_height / 2;
             this.set(value);
         }
