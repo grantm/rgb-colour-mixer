@@ -1,0 +1,80 @@
+
+#mixer {
+  display: inline-block;
+  background-image: url(panel-texture.jpg);
+  border: 2px solid #cccccc;
+  border-right-color: #333333;
+  border-bottom-color: #333333;
+  border-radius: 10px;
+  padding: 30px 16px 16px;
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+  height: 380px;
+}
+
+.slider .value, .indicator .value {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  color: #303030;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#mixer .indicator .value {
+  left: -0.3em;
+}
+
+.slider h1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans;
+  font-size: 18px;
+  color: #666666;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.3), 1px 1px 0px rgba(255,255,255,0.3);
+}
+
+.slider .track {
+  position: absolute;
+  top: 40px;
+  width: 6px;
+  border-radius: 4px;
+  background-color: #333333;
+  border: 1px solid #111111;
+  border-right-color: #888888;
+  border-bottom-color: #888888;
+}
+
+.slider .knob {
+  position: absolute;
+  top: 148px;
+  width: 34px;
+  height: 60px;
+  background-image: url(rgb-colour-slider.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.sliders, .indicator {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.indicator {
+  position: relative;
+  padding: 35px 30px 0 30px;
+}
+
